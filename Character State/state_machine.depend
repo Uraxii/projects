@@ -1,0 +1,48 @@
+# depslib dependency file v1.0
+1559073049 source:c:\users\brandon paul\desktop\state_machine\menu.cpp
+	"menu.h"
+	<iostream>
+	<stdlib.h>
+
+1559072832 c:\users\brandon paul\desktop\state_machine\menu.h
+
+1559582915 source:c:\users\brandon paul\desktop\state_machine\main.cpp
+	<iostream>
+	"character.h"
+	"moving.h"
+	"combat.h"
+	"talking.h"
+	"inventory.h"
+	"menu.h"
+
+1558654338 c:\users\brandon paul\desktop\state_machine\moving.h
+
+1559584514 c:\users\brandon paul\desktop\state_machine\combat.h
+	"character.h"
+
+1558654346 c:\users\brandon paul\desktop\state_machine\talking.h
+
+1559064546 c:\users\brandon paul\desktop\state_machine\inventory.h
+
+1559584577 source:c:\users\brandon paul\desktop\state_machine\combat.cpp
+	"combat.h"
+	<iostream>
+
+1559064559 source:c:\users\brandon paul\desktop\state_machine\inventory.cpp
+	"inventory.h"
+	<iostream>
+
+1558654401 source:c:\users\brandon paul\desktop\state_machine\moving.cpp
+	"moving.h"
+	<iostream>
+
+1558654433 source:c:\users\brandon paul\desktop\state_machine\talking.cpp
+	"talking.h"
+	<iostream>
+
+1559587041 source:c:\users\brandon paul\desktop\state_machine\character.cpp
+	"character.h"
+
+1559587047 c:\users\brandon paul\desktop\state_machine\character.h
+	<iostream>
+

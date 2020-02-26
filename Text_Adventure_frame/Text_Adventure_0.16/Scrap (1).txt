@@ -1,0 +1,74 @@
+#include <iostream>
+
+using namespace std;
+
+class Room
+{
+private:
+    int x, y, z;
+    bool nDoor, sDoor, eDoor, wDoor, upStairs, dwnStairs;
+
+public:
+    void Set_Coordinates(int x1, int y1, int z1)
+    {
+        x = x1;
+        y = y1;
+        z = z1;
+    }
+
+    int getX()
+    {
+        return x;
+    }
+
+    int getY()
+    {
+
+        return y;
+    }
+
+    int getZ()
+    {
+        return z;
+    }
+
+};
+
+
+int main()
+{
+    int maxZ = 5;
+    int maxX = 5, maxY =  5;
+
+    //Debug
+    cout << "maxX: " << maxX << ", maxY: " << maxY << endl;
+
+    //Generate Rooms
+    int roomNum = 0;
+    Room rooms[maxZ][maxX*maxY*4];
+
+    for (int iz = 0; iz < maxZ; ++iz)
+    {
+        roomNum = 0;
+        for (int ix = maxY*-1; ix <= maxY; ++ix)
+            {
+                for(int iy = maxX*-1; iy <= maxX; ++iy)
+                    {
+                        rooms[iz][roomNum].Set_Coordinates(ix, iy, iz);
+                        cout << "created room @ (" << rooms[iz][roomNum].getX() << ", " << rooms[iz][roomNum].getY() << ", " << rooms[iz][roomNum].getZ() << ")" << endl;
+                    }
+            }
+    }
+
+    int floors = sizeof(rooms);
+    cout << "size: " << floors << endl;
+    //cout << "rooms[0][0]: " << rooms[0][0] << endl;
+
+    for (int iz = 0; iz < floors; ++iz)
+        {
+            cout << "floor " << iz << ": " << rooms[iz] << endl;
+            //for (int room = 0; sizeof(room) < ){}
+        }
+
+    return 0;
+}
