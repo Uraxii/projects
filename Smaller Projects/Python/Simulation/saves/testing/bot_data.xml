@@ -1,0 +1,45 @@
+<?xlm version="1.0" encoding="UTF-8"?>
+<bots>
+    <npc npc_id="0">
+        <attributes>
+            <f_name>Lawful</f_name>
+            <l_name>Individual</l_name>
+            <huner>100</huner>
+            <sleep>100</sleep>
+            <work>100</work>
+        </attributes>
+        <modifeiers>
+            <motivation>5</motivation>
+            <lawfulness>5</lawfulness>
+            <status>1</status>
+        </modifeiers>
+    </npc>
+    <npc  npc_id="1">
+        <attributes>
+            <f_name>Somewhat-Lawful</f_name>
+            <l_name>Individual</l_name>
+            <huner>100</huner>
+            <sleep>100</sleep>
+            <work>100</work>
+        </attributes>
+        <modifeiers>
+            <motivation>3</motivation>
+            <lawfulness>50</lawfulness>
+            <status>1</status>
+        </modifeiers>
+    </npc>
+    <npc npc_id="2">
+        <attributes>
+            <f_name>Unlawful</f_name>
+            <l_name>Individual</l_name>
+            <huner>100</huner>
+            <sleep>100</sleep>
+            <work>100</work>
+        </attributes>
+        <modifeiers>
+            <motivation>3</motivation>
+            <lawfulness>0</lawfulness>
+            <status>1</status>
+        </modifeiers>
+    </npc>
+</bots>
